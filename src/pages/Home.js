@@ -1,16 +1,15 @@
 import { useEffect, useState } from "react";
+import NavBar from "../components/NavBar";
 
 function Home() {
   return (
     <>
       <header>
-        {/* What component should go here? */}
+        <NavBar />
       </header>
-      <main>
-        {/* Info goes here! */}
-      </main>
+      <main>{/* Info goes here! */}</main>
     </>
   );
-};
+}
 
 export default Home;
