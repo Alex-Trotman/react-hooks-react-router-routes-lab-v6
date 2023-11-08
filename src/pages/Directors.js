@@ -18,7 +18,7 @@ function Directors() {
           return <article>
             <h2>{director.name}</h2>
             <ul>{director.movies.map((movie) => {
-              return <li>{movie}</li>
+              return <li key={movie}>{movie}</li>
             })}</ul>
           </article>
         })

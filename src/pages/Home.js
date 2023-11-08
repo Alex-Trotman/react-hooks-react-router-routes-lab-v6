@@ -11,7 +11,7 @@ const [movies, setMovies] = useState([])
   }, [])
 
   const movieElements = movies.map((movie) => {
-    return <MovieCard title={movie.title} id={movie.id}/>
+    return <MovieCard key={movie.title}title={movie.title} id={movie.id}/>
   })
 
   return (
